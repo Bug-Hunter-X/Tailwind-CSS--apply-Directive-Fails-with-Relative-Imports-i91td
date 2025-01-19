@@ -1,0 +1,1 @@
+This bug is related to using Tailwind CSS's `@apply` directive within a stylesheet that's imported using a relative path. When the relative path is incorrect or the stylesheet isn't properly included in the build process, the `@apply` directive might fail to work and the styles might not be applied.
