@@ -1,0 +1,23 @@
+/* bug.css */
+@layer base {
+  .btn {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+}
+
+/* bugSolution.css */
+@layer base {
+  .btn {
+    background-color: rgb(59, 130, 246);
+    color: white;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 0.375rem;
+    &:hover {
+      background-color: rgb(30, 64, 175);
+    }
+  }
+}
+
+/* Correct way without using @apply*/
+/* Or,  Include the file correctly in your build process */
